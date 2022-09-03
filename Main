@@ -347,6 +347,7 @@ function WindowTable:CreateWindow(config)
 		["UIStroke_4"] = Instance.new("UIStroke"),
 		["Frame_14"] = Instance.new("Frame"),
 		["UICorner_17"] = Instance.new("UICorner"),
+		["TextButton_1"] = Instance.new("TextButton"),
 		["UICorner_16"] = Instance.new("UICorner"),
 		["Frame_24"] = Instance.new("Frame"),
 		["LocalScript_1"] = Instance.new("LocalScript"),
@@ -417,15 +418,24 @@ function WindowTable:CreateWindow(config)
 	instances.Frame_3.Size = UDim2.new(0, 330, 0, 35)
 	instances.Frame_3.Name = 'TopRow'
 
+	instances.TextButton_1.Parent = instances.Frame_3
+	instances.TextButton_1.Font = Enum.Font.SourceSans
+	instances.TextButton_1.Text = ''
+	instances.TextButton_1.TextColor3 = Color3.new(0, 0, 0)
+	instances.TextButton_1.TextSize = 14
+	instances.TextButton_1.BackgroundColor3 = Color3.new(1, 1, 1)
+	instances.TextButton_1.BackgroundTransparency = 1
+	instances.TextButton_1.Size = UDim2.new(0, 35, 0, 35)
+	instances.TextButton_1.Name = 'ArrowButton'
 
-
-
+	instances.ImageLabel_1.Parent = instances.TextButton_1
 	instances.ImageLabel_1.Image = 'http://www.roblox.com/asset/?id=6031091000'
 	instances.ImageLabel_1.ImageColor3 = Color3.new(0.862745, 0.862745, 0.862745)
 	instances.ImageLabel_1.BackgroundTransparency = 1
 	instances.ImageLabel_1.BorderSizePixel = 0
 	instances.ImageLabel_1.Size = UDim2.new(0, 35, 0, 35)
 
+	instances.LocalScript_1.Parent = instances.TextButton_1
 
 	instances.TextLabel_1.Parent = instances.Frame_3
 	instances.TextLabel_1.Font = Enum.Font.SourceSansSemibold
@@ -1130,7 +1140,7 @@ function WindowTable:CreateWindow(config)
 		["TextButton_3"] = Instance.new("TextButton"),
 		["LocalScript_2"] = Instance.new("LocalScript"),
 		["UIListLayout_2"] = Instance.new("UIListLayout"),
-
+		["TextButton_1"] = Instance.new("TextButton"),
 		["ScrollingFrame_2"] = Instance.new("ScrollingFrame"),
 		["UICorner_2"] = Instance.new("UICorner"),
 		["Frame_14"] = Instance.new("Frame"),
@@ -1177,11 +1187,24 @@ function WindowTable:CreateWindow(config)
 	OptionInstance.Frame_3.Size = UDim2.new(0, 283, 0, 34)
 	OptionInstance.Frame_3.Name = 'Button'
 
+	OptionInstance.TextButton_1.Parent = OptionInstance.Frame_3
+	OptionInstance.TextButton_1.Font = Enum.Font.SourceSansSemibold
+	OptionInstance.TextButton_1.Text = ''
+	OptionInstance.TextButton_1.TextColor3 = Color3.new(0.898039, 0.898039, 0.898039)
+	OptionInstance.TextButton_1.TextSize = 18
+	OptionInstance.TextButton_1.AnchorPoint = Vector2.new(0.5, 0.5)
+	OptionInstance.TextButton_1.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
+	OptionInstance.TextButton_1.BorderSizePixel = 0
+	OptionInstance.TextButton_1.LayoutOrder = 3
+	OptionInstance.TextButton_1.Position = UDim2.new(0.5, 0, 0.5, 0)
+	OptionInstance.TextButton_1.Size = UDim2.new(1, 0, 1, 0)
+	OptionInstance.TextButton_1.AutoButtonColor = false
+	OptionInstance.TextButton_1.Name = 'AntiFallButton'
 
-
+	OptionInstance.UICorner_1.Parent = OptionInstance.TextButton_1
 	OptionInstance.UICorner_1.CornerRadius = UDim.new(0, 4)
 
-
+	OptionInstance.Frame_4.Parent = OptionInstance.TextButton_1
 	OptionInstance.Frame_4.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
 	OptionInstance.Frame_4.Position = UDim2.new(0, 0, 0.9411764740943909, 0)
 	OptionInstance.Frame_4.Size = UDim2.new(1, 0, 0.05882352963089943, 0)
@@ -1190,7 +1213,7 @@ function WindowTable:CreateWindow(config)
 	OptionInstance.UICorner_2.Parent = OptionInstance.Frame_4
 	OptionInstance.UICorner_2.CornerRadius = UDim.new(0, 4)
 
-
+	OptionInstance.TextLabel_1.Parent = OptionInstance.TextButton_1
 	OptionInstance.TextLabel_1.Font = Enum.Font.SourceSansSemibold
 	OptionInstance.TextLabel_1.Text = 'Destroy UI'
 	OptionInstance.TextLabel_1.TextColor3 = Color3.new(0.862745, 0.862745, 0.862745)
@@ -1201,12 +1224,14 @@ function WindowTable:CreateWindow(config)
 	OptionInstance.TextLabel_1.Position = UDim2.new(0.03180212154984474, 0, 0, 0)
 	OptionInstance.TextLabel_1.Size = UDim2.new(0.8021202683448792, 0, 1, 0)
 
+	OptionInstance.ImageLabel_1.Parent = OptionInstance.TextButton_1
 	OptionInstance.ImageLabel_1.Image = 'http://www.roblox.com/asset/?id=6031229361'
 	OptionInstance.ImageLabel_1.BackgroundTransparency = 1
 	OptionInstance.ImageLabel_1.BorderSizePixel = 0
 	OptionInstance.ImageLabel_1.Position = UDim2.new(0.9151942729949951, 0, 0.20588237047195435, 0)
 	OptionInstance.ImageLabel_1.Size = UDim2.new(0, 19, 0, 19)
 
+	OptionInstance.Frame_5.Parent = OptionInstance.TextButton_1
 	OptionInstance.Frame_5.AnchorPoint = Vector2.new(0.5, 0.5)
 	OptionInstance.Frame_5.BackgroundColor3 = Color3.new(0, 0, 0)
 	OptionInstance.Frame_5.BackgroundTransparency = 1
@@ -1225,9 +1250,10 @@ function WindowTable:CreateWindow(config)
 	OptionInstance.UIStroke_1.Transparency = 0.5
 	OptionInstance.UIStroke_1.Name = 'Border'
 
+	OptionInstance.LocalScript_1.Parent = OptionInstance.TextButton_1
 	OptionInstance.LocalScript_1.Name = 'RippleEffect'
 
-
+	OptionInstance.LocalScript_2.Parent = OptionInstance.TextButton_1
 	OptionInstance.LocalScript_2.Disabled = true
 
 	OptionInstance.UIListLayout_2.Parent = OptionInstance.Frame_2
@@ -1362,7 +1388,7 @@ function WindowTable:CreateWindow(config)
 
 	OptionInstance.TextLabel_5.Parent = OptionInstance.Frame_13
 	OptionInstance.TextLabel_5.Font = Enum.Font.SourceSansSemibold
-	OptionInstance.TextLabel_5.Text = 'Made by Helois (Fruity Pebbles#3302 on Discord)'
+	OptionInstance.TextLabel_5.Text = 'Made by Helois'
 	OptionInstance.TextLabel_5.TextColor3 = Color3.new(0.862745, 0.862745, 0.862745)
 	OptionInstance.TextLabel_5.TextSize = 18
 	OptionInstance.TextLabel_5.TextWrapped = true
@@ -1421,7 +1447,7 @@ function WindowTable:CreateWindow(config)
 			if not table.find(BlacklistedKeys,Input.KeyCode) then
 				Key = Input.KeyCode
 			else
-				Key = Enum.RightShift
+				Key = Enum.KeyCode.RightShift
 			end
 
 			Listening = false
@@ -1447,12 +1473,21 @@ function WindowTable:CreateWindow(config)
 		Label.Text = ".."
 	end)
 
+	OptionInstance.TextButton_1.MouseButton1Click:Connect(function()
+		screenGui:Destroy()
+	end)
 
 	OptionInstance.TextButton_3.MouseEnter:Connect(function()
 		Util:Tween(OptionInstance.TextButton_3.Background,{BackgroundTransparency = 0.8},0.2)
 	end)
 	OptionInstance.TextButton_3.MouseLeave:Connect(function()
 		Util:Tween(OptionInstance.TextButton_3.Background,{BackgroundTransparency = 1},0.2)
+	end)
+	OptionInstance.TextButton_1.MouseEnter:Connect(function()
+		Util:Tween(OptionInstance.TextButton_1.Background,{BackgroundTransparency = 0.8},0.2)
+	end)
+	OptionInstance.TextButton_1.MouseLeave:Connect(function()
+		Util:Tween(OptionInstance.TextButton_1.Background,{BackgroundTransparency = 1},0.2)
 	end)
 
 
@@ -1472,7 +1507,7 @@ function WindowTable:CreateWindow(config)
 		Util:Tween(instances.TextButton_2.buttonShadow, {BackgroundColor3 = Color3.fromRGB(0, 134, 84)},0.2)
 	end)
 
-
+	local Button =  instances.TextButton_1
 	local Image = Button.ImageLabel
 
 	local Opened = true
@@ -1520,6 +1555,7 @@ function WindowTable:CreateWindow(config)
 			["UIStroke_1"] = Instance.new("UIStroke"),
 			["Frame_3"] = Instance.new("Frame"),
 			["UIListLayout_1"] = Instance.new("UIListLayout"),
+			["TextButton_1"] = Instance.new("TextButton"),
 			["UICorner_2"] = Instance.new("UICorner"),
 			["UICorner_3"] = Instance.new("UICorner"),
 			["UIPadding_1"] = Instance.new("UIPadding"),
@@ -1530,8 +1566,22 @@ function WindowTable:CreateWindow(config)
 			["UICorner_1"] = Instance.new("UICorner"),
 		}
 
+		TabInstance.TextButton_1.Parent = instances.ScrollingFrame_1
+		TabInstance.TextButton_1.Font = Enum.Font.SourceSansSemibold
+		TabInstance.TextButton_1.Text = ''
+		TabInstance.TextButton_1.TextColor3 = Color3.new(0.898039, 0.898039, 0.898039)
+		TabInstance.TextButton_1.TextSize = 18
+		TabInstance.TextButton_1.BackgroundColor3 = Color3.new(0, 0.666667, 0.494118)
+		TabInstance.TextButton_1.BorderSizePixel = 0
+		TabInstance.TextButton_1.Position = UDim2.new(0.0714285746216774, 0, -0.002994012087583542, 0)
+		TabInstance.TextButton_1.Size = UDim2.new(0, 117, 0, 32)
+		TabInstance.TextButton_1.AutoButtonColor = false
+		TabInstance.TextButton_1.Name = tostring(tabname)
+
+		TabInstance.UICorner_1.Parent = TabInstance.TextButton_1
 		TabInstance.UICorner_1.CornerRadius = UDim.new(0, 4)
 
+		TabInstance.Frame_1.Parent = TabInstance.TextButton_1
 		TabInstance.Frame_1.BackgroundColor3 = Color3.new(0, 0.52549, 0.329412)
 		TabInstance.Frame_1.Position = UDim2.new(0, 0, 0.9285714030265808, 0)
 		TabInstance.Frame_1.Size = UDim2.new(1, 0, 0.0714285746216774, 0)
@@ -1539,6 +1589,8 @@ function WindowTable:CreateWindow(config)
 
 		TabInstance.UICorner_2.Parent = TabInstance.Frame_1
 		TabInstance.UICorner_2.CornerRadius = UDim.new(0, 4)
+
+		TabInstance.Frame_2.Parent = TabInstance.TextButton_1
 		TabInstance.Frame_2.BackgroundColor3 = Color3.new(0, 0, 0)
 		TabInstance.Frame_2.BackgroundTransparency = 1
 		TabInstance.Frame_2.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
@@ -1549,6 +1601,7 @@ function WindowTable:CreateWindow(config)
 		TabInstance.UICorner_3.Parent = TabInstance.Frame_2
 		TabInstance.UICorner_3.CornerRadius = UDim.new(0, 4)
 
+		TabInstance.TextLabel_1.Parent = TabInstance.TextButton_1
 		TabInstance.TextLabel_1.Font = Enum.Font.SourceSansSemibold
 		TabInstance.TextLabel_1.Text = tostring(tabname)
 		TabInstance.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
@@ -1559,6 +1612,7 @@ function WindowTable:CreateWindow(config)
 		TabInstance.TextLabel_1.ZIndex = 1
 
 
+		TabInstance.Frame_3.Parent = TabInstance.TextButton_1
 		TabInstance.Frame_3.AnchorPoint = Vector2.new(0.5, 0.5)
 		TabInstance.Frame_3.BackgroundColor3 = Color3.new(0, 0, 0)
 		TabInstance.Frame_3.BackgroundTransparency = 1
@@ -1566,6 +1620,7 @@ function WindowTable:CreateWindow(config)
 		TabInstance.Frame_3.Position = UDim2.new(0.5, 0, 0.5, 0)
 		TabInstance.Frame_3.Size = UDim2.new(1, 0, 1, 0)
 		TabInstance.Frame_3.Name = 'Background'
+		Util:Ripple(TabInstance.TextButton_1)
 
 		TabInstance.UICorner_4.Parent = TabInstance.Frame_3
 		TabInstance.UICorner_4.CornerRadius = UDim.new(0, 4)
@@ -1613,6 +1668,40 @@ function WindowTable:CreateWindow(config)
 			Util:Tween(newPage,{CanvasSize = UDim2.new(1, 0, 0, size.Y + 80)},0.1)
 
 		end)
+
+		if #instances.ScrollingFrame_1:GetChildren() == 3 then
+			Util:Tween(TabInstance.TextButton_1, {BackgroundColor3 = Color3.fromRGB(0, 170, 126)},0.2)
+			Util:Tween(TabInstance.TextButton_1.buttonShadow, {BackgroundColor3 = Color3.fromRGB(0, 134, 84)},0.2)
+			TabInstance.ScrollingFrame_1.Visible = true
+		else
+			Util:Tween(TabInstance.TextButton_1, {BackgroundColor3 = Color3.fromRGB(100, 100, 100)},0.2)
+			Util:Tween(TabInstance.TextButton_1.buttonShadow, {BackgroundColor3 = Color3.fromRGB(71, 71, 71)},0.2)
+			TabInstance.ScrollingFrame_1.Visible = false
+		end
+
+		TabInstance.TextButton_1.MouseEnter:Connect(function()
+			Util:Tween(TabInstance.TextButton_1.Background,{BackgroundTransparency = 0.8},0.2)
+		end)
+		TabInstance.TextButton_1.MouseLeave:Connect(function()
+			Util:Tween(TabInstance.TextButton_1.Background,{BackgroundTransparency = 1},0.2)
+		end)
+
+		TabInstance.TextButton_1.MouseButton1Click:Connect(function()
+			for i,v in next, instances.Folder_1:GetChildren() do
+				v.Visible = false
+			end 
+			TabInstance.ScrollingFrame_1.Visible = true
+
+			for i,v in pairs(instances.ScrollingFrame_1.Parent:GetDescendants()) do
+				if v:IsA("TextButton") then
+					Util:Tween(v, {BackgroundColor3 = Color3.fromRGB(100, 100, 100)},0.2)
+					Util:Tween(v.buttonShadow, {BackgroundColor3 = Color3.fromRGB(71, 71, 71)},0.2)
+				end
+			end
+			Util:Tween(TabInstance.TextButton_1, {BackgroundColor3 = Color3.fromRGB(0, 170, 126)},0.2)
+			Util:Tween(TabInstance.TextButton_1.buttonShadow, {BackgroundColor3 = Color3.fromRGB(0, 134, 84)},0.2)
+		end)
+
 
 
 		local SectionHandler = {}
@@ -1728,6 +1817,7 @@ function WindowTable:CreateWindow(config)
 					["ImageLabel_1"] = Instance.new("ImageLabel"),
 					["UICorner_1"] = Instance.new("UICorner"),
 					["Frame_2"] = Instance.new("Frame"),
+					["TextButton_1"] = Instance.new("TextButton"),
 					["TextLabel_1"] = Instance.new("TextLabel"),
 					["LocalScript_1"] = Instance.new("LocalScript"),
 					["UIStroke_1"] = Instance.new("UIStroke"),
@@ -1744,8 +1834,23 @@ function WindowTable:CreateWindow(config)
 				ButtonInstance.Frame_1.Name = tostring(btnText)
 				ButtonInstance.Frame_1.LayoutOrder = tonumber(OrderNumber)
 
+				ButtonInstance.TextButton_1.Parent = ButtonInstance.Frame_1
+				ButtonInstance.TextButton_1.Font = Enum.Font.SourceSansSemibold
+				ButtonInstance.TextButton_1.Text = ''
+				ButtonInstance.TextButton_1.TextColor3 = Color3.new(0.898039, 0.898039, 0.898039)
+				ButtonInstance.TextButton_1.TextSize = 18
+				ButtonInstance.TextButton_1.AnchorPoint = Vector2.new(0.5, 0.5)
+				ButtonInstance.TextButton_1.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
+				ButtonInstance.TextButton_1.BorderSizePixel = 0
+				ButtonInstance.TextButton_1.Position = UDim2.new(0.5, 0, 0.5, 0)
+				ButtonInstance.TextButton_1.Size = UDim2.new(1, 0, 1, 0)
+				ButtonInstance.TextButton_1.AutoButtonColor = false
+				ButtonInstance.TextButton_1.Name = 'AntiFallButton'
+
+				ButtonInstance.UICorner_1.Parent = ButtonInstance.TextButton_1
 				ButtonInstance.UICorner_1.CornerRadius = UDim.new(0, 4)
 
+				ButtonInstance.Frame_2.Parent = ButtonInstance.TextButton_1
 				ButtonInstance.Frame_2.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
 				ButtonInstance.Frame_2.Position = UDim2.new(0, 0, 0.9411764740943909, 0)
 				ButtonInstance.Frame_2.Size = UDim2.new(1, 0, 0.05882352963089943, 0)
@@ -1754,7 +1859,7 @@ function WindowTable:CreateWindow(config)
 				ButtonInstance.UICorner_2.Parent = ButtonInstance.Frame_2
 				ButtonInstance.UICorner_2.CornerRadius = UDim.new(0, 4)
 
-
+				ButtonInstance.TextLabel_1.Parent = ButtonInstance.TextButton_1
 				ButtonInstance.TextLabel_1.Font = Enum.Font.SourceSansSemibold
 				ButtonInstance.TextLabel_1.Text = tostring(btnText)
 				ButtonInstance.TextLabel_1.TextColor3 = Color3.new(0.862745, 0.862745, 0.862745)
@@ -1765,13 +1870,14 @@ function WindowTable:CreateWindow(config)
 				ButtonInstance.TextLabel_1.Position = UDim2.new(0.03180212154984474, 0, 0, 0)
 				ButtonInstance.TextLabel_1.Size = UDim2.new(0.8412331938743591, 0, 1, 0)
 
-
+				ButtonInstance.ImageLabel_1.Parent = ButtonInstance.TextButton_1
 				ButtonInstance.ImageLabel_1.Image = 'http://www.roblox.com/asset/?id=6031229361'
 				ButtonInstance.ImageLabel_1.BackgroundTransparency = 1
 				ButtonInstance.ImageLabel_1.BorderSizePixel = 0
 				ButtonInstance.ImageLabel_1.Position = UDim2.new(0.9151942729949951, 0, 0.20588237047195435, 0)
 				ButtonInstance.ImageLabel_1.Size = UDim2.new(0, 19, 0, 19)
 
+				ButtonInstance.Frame_3.Parent = ButtonInstance.TextButton_1
 				ButtonInstance.Frame_3.AnchorPoint = Vector2.new(0.5, 0.5)
 				ButtonInstance.Frame_3.BackgroundColor3 = Color3.new(0, 0, 0)
 				ButtonInstance.Frame_3.BackgroundTransparency = 1
@@ -1779,6 +1885,7 @@ function WindowTable:CreateWindow(config)
 				ButtonInstance.Frame_3.Position = UDim2.new(0.5, 0, 0.5, 0)
 				ButtonInstance.Frame_3.Size = UDim2.new(1, 0, 1, 0)
 				ButtonInstance.Frame_3.Name = 'Background'
+				Util:Ripple(ButtonInstance.TextButton_1)
 
 				ButtonInstance.UICorner_3.Parent = ButtonInstance.Frame_3
 				ButtonInstance.UICorner_3.CornerRadius = UDim.new(0, 4)
@@ -1790,6 +1897,7 @@ function WindowTable:CreateWindow(config)
 				ButtonInstance.UIStroke_1.Transparency = 0.5
 				ButtonInstance.UIStroke_1.Name = 'Border'
 
+				local Button = ButtonInstance.TextButton_1
 				local Debounce
 
 
@@ -1829,6 +1937,7 @@ function WindowTable:CreateWindow(config)
 					["Frame_2"] = Instance.new("Frame"),
 					["TextLabel_1"] = Instance.new("TextLabel"),
 					["Frame_3"] = Instance.new("Frame"),
+					["TextButton_1"] = Instance.new("TextButton"),
 					["Frame_1"] = Instance.new("Frame"),
 					["UIStroke_1"] = Instance.new("UIStroke"),
 				}
@@ -1841,11 +1950,21 @@ function WindowTable:CreateWindow(config)
 				ToggleInstance.Frame_1.Name = tostring(btnText)
 				ToggleInstance.Frame_1.LayoutOrder = tonumber(OrderNumber)
 
+				ToggleInstance.TextButton_1.Parent = ToggleInstance.Frame_1
+				ToggleInstance.TextButton_1.Font = Enum.Font.SourceSansSemibold
+				ToggleInstance.TextButton_1.Text = ''
+				ToggleInstance.TextButton_1.TextColor3 = Color3.new(0.898039, 0.898039, 0.898039)
+				ToggleInstance.TextButton_1.TextSize = 18
+				ToggleInstance.TextButton_1.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
+				ToggleInstance.TextButton_1.BorderSizePixel = 0
+				ToggleInstance.TextButton_1.Size = UDim2.new(1, 0, 1, 0)
+				ToggleInstance.TextButton_1.AutoButtonColor = false
+				ToggleInstance.TextButton_1.Name = 'Togglebutton'
 
-
-
+				ToggleInstance.UICorner_1.Parent = ToggleInstance.TextButton_1
 				ToggleInstance.UICorner_1.CornerRadius = UDim.new(0, 4)
 
+				ToggleInstance.Frame_2.Parent = ToggleInstance.TextButton_1
 				ToggleInstance.Frame_2.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
 				ToggleInstance.Frame_2.Position = UDim2.new(0, 0, 0.9411764740943909, 0)
 				ToggleInstance.Frame_2.Size = UDim2.new(1, 0, 0.05882352963089943, 0)
@@ -1854,7 +1973,7 @@ function WindowTable:CreateWindow(config)
 				ToggleInstance.UICorner_2.Parent = ToggleInstance.Frame_2
 				ToggleInstance.UICorner_2.CornerRadius = UDim.new(0, 4)
 
-
+				ToggleInstance.TextLabel_1.Parent = ToggleInstance.TextButton_1
 				ToggleInstance.TextLabel_1.Font = Enum.Font.SourceSansSemibold
 				ToggleInstance.TextLabel_1.Text = tostring(btnText)
 				ToggleInstance.TextLabel_1.TextColor3 = Color3.new(0.862745, 0.862745, 0.862745)
@@ -1864,12 +1983,15 @@ function WindowTable:CreateWindow(config)
 				ToggleInstance.TextLabel_1.BackgroundTransparency = 1
 				ToggleInstance.TextLabel_1.Position = UDim2.new(0.03180212154984474, 0, 0, 0)
 				ToggleInstance.TextLabel_1.Size = UDim2.new(0.8021201491355896, 0, 1, 0)
+
+				ToggleInstance.ImageLabel_1.Parent = ToggleInstance.TextButton_1
 				ToggleInstance.ImageLabel_1.Image = 'http://www.roblox.com/asset/?id=6031068426'
 				ToggleInstance.ImageLabel_1.BackgroundTransparency = 1
 				ToggleInstance.ImageLabel_1.BorderSizePixel = 0
 				ToggleInstance.ImageLabel_1.Position = UDim2.new(0, 258, 0, 7)
 				ToggleInstance.ImageLabel_1.Size = UDim2.new(0, 19, 0, 19)
 
+				ToggleInstance.Frame_3.Parent = ToggleInstance.TextButton_1
 				ToggleInstance.Frame_3.AnchorPoint = Vector2.new(0.5, 0.5)
 				ToggleInstance.Frame_3.BackgroundColor3 = Color3.new(0, 0, 0)
 				ToggleInstance.Frame_3.BackgroundTransparency = 1
@@ -1878,6 +2000,7 @@ function WindowTable:CreateWindow(config)
 				ToggleInstance.Frame_3.Position = UDim2.new(0.5, 0, 0.5, 0)
 				ToggleInstance.Frame_3.Size = UDim2.new(1, 0, 1, 0)
 				ToggleInstance.Frame_3.Name = 'Background'
+				Util:Ripple(ToggleInstance.TextButton_1)
 
 				ToggleInstance.UICorner_3.Parent = ToggleInstance.Frame_3
 				ToggleInstance.UICorner_3.CornerRadius = UDim.new(0, 4)
@@ -1889,6 +2012,7 @@ function WindowTable:CreateWindow(config)
 				ToggleInstance.UIStroke_1.Transparency = 0.5
 				ToggleInstance.UIStroke_1.Name = 'Border'
 
+				local Toggle = ToggleInstance.TextButton_1
 
 
 				local active = Default
@@ -2001,6 +2125,7 @@ function WindowTable:CreateWindow(config)
 					["TextLabel_2"] = Instance.new("TextLabel"),
 					["UICorner_5"] = Instance.new("UICorner"),
 					["ImageLabel_2"] = Instance.new("ImageLabel"),
+					["TextButton_1"] = Instance.new("TextButton"),
 					["ImageLabel_1"] = Instance.new("ImageLabel"),
 				}
 
@@ -2034,8 +2159,23 @@ function WindowTable:CreateWindow(config)
 				SliderInstance.TextLabel_1.Position = UDim2.new(0.03180212154984474, 0, 0, 0)
 				SliderInstance.TextLabel_1.Size = UDim2.new(0.2720848023891449, 0, 1, 0)
 
+				SliderInstance.TextButton_1.Parent = SliderInstance.Frame_1
+				SliderInstance.TextButton_1.Font = Enum.Font.SourceSans
+				SliderInstance.TextButton_1.Text = ''
+				SliderInstance.TextButton_1.TextColor3 = Color3.new(0, 0, 0)
+				SliderInstance.TextButton_1.TextSize = 14
+				SliderInstance.TextButton_1.BackgroundColor3 = Color3.new(0.862745, 0.862745, 0.862745)
+				SliderInstance.TextButton_1.Position = UDim2.new(0.34299999475479126, 0, 0.38199999928474426, 0)
+				SliderInstance.TextButton_1.Size = UDim2.new(0, 150, 0, 7)
+				SliderInstance.TextButton_1.AutoButtonColor = false
+				SliderInstance.TextButton_1.Name = 'Main'
+
+				SliderInstance.UICorner_3.Parent = SliderInstance.TextButton_1
+
+				SliderInstance.LocalScript_1.Parent = SliderInstance.TextButton_1
 				SliderInstance.LocalScript_1.Disabled = true
 
+				SliderInstance.Frame_3.Parent = SliderInstance.TextButton_1
 				SliderInstance.Frame_3.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
 				SliderInstance.Frame_3.Size = UDim2.new(0, 150, 0, 7)
 
@@ -2052,6 +2192,7 @@ function WindowTable:CreateWindow(config)
 				SliderInstance.ImageLabel_1.Position = UDim2.new(1, 0, 0.5, 0)
 				SliderInstance.ImageLabel_1.Size = UDim2.new(0, 10, 0, 10)
 
+				SliderInstance.ImageLabel_2.Parent = SliderInstance.TextButton_1
 				SliderInstance.ImageLabel_2.Image = 'http://www.roblox.com/asset/?id=6031233863'
 				SliderInstance.ImageLabel_2.BackgroundTransparency = 1
 				SliderInstance.ImageLabel_2.BorderSizePixel = 0
@@ -2103,7 +2244,7 @@ function WindowTable:CreateWindow(config)
 				SliderInstance.UICorner_6.Parent = SliderInstance.Frame_5
 				SliderInstance.UICorner_6.CornerRadius = UDim.new(0, 4)
 
-
+				local Slider = SliderInstance.TextButton_1
 
 				local TextHover = Slider.Parent.TextFrame
 				local Val = TextHover.Frame.TextLabel
@@ -2198,6 +2339,7 @@ function WindowTable:CreateWindow(config)
 				local KeybindInstance = {
 					["UICorner_3"] = Instance.new("UICorner"),
 					["UICorner_1"] = Instance.new("UICorner"),
+					["TextButton_1"] = Instance.new("TextButton"),
 					["TextLabel_2"] = Instance.new("TextLabel"),
 					["LocalScript_1"] = Instance.new("LocalScript"),
 					["TextButton_2"] = Instance.new("TextButton"),
@@ -2217,11 +2359,21 @@ function WindowTable:CreateWindow(config)
 				KeybindInstance.Frame_1.Name = tostring(btnText)
 				KeybindInstance.Frame_1.LayoutOrder = tonumber(OrderNumber)
 
+				KeybindInstance.TextButton_1.Parent = KeybindInstance.Frame_1
+				KeybindInstance.TextButton_1.Font = Enum.Font.SourceSansSemibold
+				KeybindInstance.TextButton_1.Text = ''
+				KeybindInstance.TextButton_1.TextColor3 = Color3.new(0.898039, 0.898039, 0.898039)
+				KeybindInstance.TextButton_1.TextSize = 18
+				KeybindInstance.TextButton_1.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
+				KeybindInstance.TextButton_1.BorderSizePixel = 0
+				KeybindInstance.TextButton_1.Size = UDim2.new(1, 0, 1, 0)
+				KeybindInstance.TextButton_1.AutoButtonColor = false
+				KeybindInstance.TextButton_1.Name = 'KeybindButton'
 
-
+				KeybindInstance.UICorner_1.Parent = KeybindInstance.TextButton_1
 				KeybindInstance.UICorner_1.CornerRadius = UDim.new(0, 4)
 
-
+				KeybindInstance.TextLabel_1.Parent = KeybindInstance.TextButton_1
 				KeybindInstance.TextLabel_1.Font = Enum.Font.SourceSansSemibold
 				KeybindInstance.TextLabel_1.Text = tostring(btnText)
 				KeybindInstance.TextLabel_1.TextColor3 = Color3.new(0.862745, 0.862745, 0.862745)
@@ -2232,7 +2384,7 @@ function WindowTable:CreateWindow(config)
 				KeybindInstance.TextLabel_1.Position = UDim2.new(0.03180212154984474, 0, 0, 0)
 				KeybindInstance.TextLabel_1.Size = UDim2.new(0.5441696047782898, 0, 1, 0)
 
-
+				KeybindInstance.Frame_2.Parent = KeybindInstance.TextButton_1
 				KeybindInstance.Frame_2.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
 				KeybindInstance.Frame_2.Position = UDim2.new(0, 0, 0.9411764740943909, 0)
 				KeybindInstance.Frame_2.Size = UDim2.new(1, 0, 0.05882352963089943, 0)
@@ -2241,7 +2393,7 @@ function WindowTable:CreateWindow(config)
 				KeybindInstance.UICorner_2.Parent = KeybindInstance.Frame_2
 				KeybindInstance.UICorner_2.CornerRadius = UDim.new(0, 4)
 
-
+				KeybindInstance.Frame_3.Parent = KeybindInstance.TextButton_1
 				KeybindInstance.Frame_3.AnchorPoint = Vector2.new(0.5, 0.5)
 				KeybindInstance.Frame_3.BackgroundColor3 = Color3.new(0, 0, 0)
 				KeybindInstance.Frame_3.BackgroundTransparency = 1
@@ -2249,7 +2401,7 @@ function WindowTable:CreateWindow(config)
 				KeybindInstance.Frame_3.Position = UDim2.new(0.5, 0, 0.5, 0)
 				KeybindInstance.Frame_3.Size = UDim2.new(1, 0, 1, 0)
 				KeybindInstance.Frame_3.Name = 'Background'
-
+				Util:Ripple(KeybindInstance.TextButton_1)
 
 				KeybindInstance.UICorner_3.Parent = KeybindInstance.Frame_3
 				KeybindInstance.UICorner_3.CornerRadius = UDim.new(0, 4)
@@ -2261,7 +2413,7 @@ function WindowTable:CreateWindow(config)
 				KeybindInstance.UIStroke_1.Transparency = 0.5
 				KeybindInstance.UIStroke_1.Name = 'Border'
 
-
+				KeybindInstance.TextButton_2.Parent = KeybindInstance.TextButton_1
 				KeybindInstance.TextButton_2.Font = Enum.Font.SourceSans
 				KeybindInstance.TextButton_2.Text = ''
 				KeybindInstance.TextButton_2.TextColor3 = Color3.new(0, 0, 0)
@@ -2285,7 +2437,7 @@ function WindowTable:CreateWindow(config)
 				KeybindInstance.TextLabel_2.Size = UDim2.new(0, 26, 0, 26)
 
 
-
+				local Button = KeybindInstance.TextButton_1
 				
 				Button.MouseButton1Click:Connect(function()
 					callback()
@@ -2374,6 +2526,7 @@ function WindowTable:CreateWindow(config)
 					["UIPadding_2"] = Instance.new("UIPadding"),
 					["UIListLayout_2"] = Instance.new("UIListLayout"),
 					["Frame_1"] = Instance.new("Frame"),
+					["TextButton_1"] = Instance.new("TextButton"),
 					["UICorner_3"] = Instance.new("UICorner"),
 					["LocalScript_1"] = Instance.new("LocalScript"),
 					["UICorner_6"] = Instance.new("UICorner"),
@@ -2406,12 +2559,21 @@ function WindowTable:CreateWindow(config)
 
 				DropInstance.UIPadding_1.Parent = DropInstance.Frame_1
 
+				DropInstance.TextButton_1.Parent = DropInstance.Frame_1
+				DropInstance.TextButton_1.Font = Enum.Font.SourceSansSemibold
+				DropInstance.TextButton_1.Text = ''
+				DropInstance.TextButton_1.TextColor3 = Color3.new(0.898039, 0.898039, 0.898039)
+				DropInstance.TextButton_1.TextSize = 18
+				DropInstance.TextButton_1.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
+				DropInstance.TextButton_1.BorderSizePixel = 0
+				DropInstance.TextButton_1.Size = UDim2.new(0, 283, 0, 34)
+				DropInstance.TextButton_1.AutoButtonColor = false
+				DropInstance.TextButton_1.Name = 'Dropdown'
 
-
-
+				DropInstance.UICorner_1.Parent = DropInstance.TextButton_1
 				DropInstance.UICorner_1.CornerRadius = UDim.new(0, 4)
 
-
+				DropInstance.ImageLabel_1.Parent = DropInstance.TextButton_1
 				DropInstance.ImageLabel_1.Image = 'http://www.roblox.com/asset/?id=6031091004'
 				DropInstance.ImageLabel_1.BackgroundTransparency = 1
 				DropInstance.ImageLabel_1.BorderSizePixel = 0
@@ -2419,6 +2581,7 @@ function WindowTable:CreateWindow(config)
 				DropInstance.ImageLabel_1.Rotation = 180
 				DropInstance.ImageLabel_1.Size = UDim2.new(0, 29, 0, 29)
 
+				DropInstance.TextLabel_1.Parent = DropInstance.TextButton_1
 				DropInstance.TextLabel_1.Font = Enum.Font.SourceSansSemibold
 				DropInstance.TextLabel_1.Text = tostring(btnText)
 				DropInstance.TextLabel_1.TextColor3 = Color3.new(0.862745, 0.862745, 0.862745)
@@ -2429,6 +2592,7 @@ function WindowTable:CreateWindow(config)
 				DropInstance.TextLabel_1.Position = UDim2.new(0.03180212154984474, 0, 0, 0)
 				DropInstance.TextLabel_1.Size = UDim2.new(0.869257926940918, 0, 1, 0)
 
+				DropInstance.Frame_2.Parent = DropInstance.TextButton_1
 				DropInstance.Frame_2.AnchorPoint = Vector2.new(0.5, 0.5)
 				DropInstance.Frame_2.BackgroundColor3 = Color3.new(0, 0, 0)
 				DropInstance.Frame_2.BackgroundTransparency = 1
@@ -2436,7 +2600,7 @@ function WindowTable:CreateWindow(config)
 				DropInstance.Frame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
 				DropInstance.Frame_2.Size = UDim2.new(1, 0, 1, 0)
 				DropInstance.Frame_2.Name = 'Background'
-
+				Util:Ripple(DropInstance.TextButton_1)
 
 				DropInstance.UICorner_2.Parent = DropInstance.Frame_2
 				DropInstance.UICorner_2.CornerRadius = UDim.new(0, 4)
@@ -2448,6 +2612,7 @@ function WindowTable:CreateWindow(config)
 				DropInstance.UIStroke_1.Transparency = 0.5
 				DropInstance.UIStroke_1.Name = 'Border'
 
+				DropInstance.Frame_3.Parent = DropInstance.TextButton_1
 				DropInstance.Frame_3.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
 				DropInstance.Frame_3.Position = UDim2.new(0, 0, 0.9411764740943909, 0)
 				DropInstance.Frame_3.Size = UDim2.new(1, 0, 0.05882352963089943, 0)
@@ -2456,7 +2621,7 @@ function WindowTable:CreateWindow(config)
 				DropInstance.UICorner_3.Parent = DropInstance.Frame_3
 				DropInstance.UICorner_3.CornerRadius = UDim.new(0, 4)
 
-
+				DropInstance.Frame_4.Parent = DropInstance.TextButton_1
 				DropInstance.Frame_4.BackgroundColor3 = Color3.new(1, 1, 1)
 				DropInstance.Frame_4.BackgroundTransparency = 1
 				DropInstance.Frame_4.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
@@ -2519,7 +2684,7 @@ function WindowTable:CreateWindow(config)
 				DropInstance.UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 
 
-
+				local Dropdown = DropInstance.TextButton_1
 				local HoldingFrame = Dropdown.HoldingFrame
 				local Holder = Dropdown.Parent
 
@@ -2554,7 +2719,7 @@ function WindowTable:CreateWindow(config)
 						self:updateDropdown(Dropdown, nil, nil, callback,Selected,btnText)
 					end
 				end)
-
+				return DropInstance.TextButton_1
 			end
 
 
@@ -2694,6 +2859,7 @@ function WindowTable:CreateWindow(config)
 					["UIStroke_2"] = Instance.new("UIStroke"),
 					["ImageLabel_1"] = Instance.new("ImageLabel"),
 					["Frame_13"] = Instance.new("Frame"),
+					["TextButton_1"] = Instance.new("TextButton"),
 					["Frame_14"] = Instance.new("Frame"),
 					["TextBox_1"] = Instance.new("TextBox"),
 					["Frame_4"] = Instance.new("Frame"),
@@ -2723,12 +2889,23 @@ function WindowTable:CreateWindow(config)
 				ColorInstance.Frame_1.Name = tostring(btnText)
 				ColorInstance.Frame_1.LayoutOrder = tonumber(OrderNumber)
 
+				ColorInstance.TextButton_1.Parent = ColorInstance.Frame_1
+				ColorInstance.TextButton_1.Font = Enum.Font.SourceSansSemibold
+				ColorInstance.TextButton_1.Text = ''
+				ColorInstance.TextButton_1.TextColor3 = Color3.new(0.898039, 0.898039, 0.898039)
+				ColorInstance.TextButton_1.TextSize = 18
+				ColorInstance.TextButton_1.AnchorPoint = Vector2.new(0.5, 0.5)
+				ColorInstance.TextButton_1.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
+				ColorInstance.TextButton_1.BorderSizePixel = 0
+				ColorInstance.TextButton_1.Position = UDim2.new(0.5, 0, 0.5, 0)
+				ColorInstance.TextButton_1.Size = UDim2.new(0, 283, 0, 34)
+				ColorInstance.TextButton_1.AutoButtonColor = false
+				ColorInstance.TextButton_1.Name = 'ColorButton'
 
-
-
+				ColorInstance.UICorner_1.Parent = ColorInstance.TextButton_1
 				ColorInstance.UICorner_1.CornerRadius = UDim.new(0, 4)
 
-
+				ColorInstance.TextLabel_1.Parent = ColorInstance.TextButton_1
 				ColorInstance.TextLabel_1.Font = Enum.Font.SourceSansSemibold
 				ColorInstance.TextLabel_1.Text = tostring(btnText)
 				ColorInstance.TextLabel_1.TextColor3 = Color3.new(0.862745, 0.862745, 0.862745)
@@ -2739,12 +2916,14 @@ function WindowTable:CreateWindow(config)
 				ColorInstance.TextLabel_1.Position = UDim2.new(0.03180212154984474, 0, 0, 0)
 				ColorInstance.TextLabel_1.Size = UDim2.new(0.6113074421882629, 0, 1, 0)
 
-
+				ColorInstance.ImageLabel_1.Parent = ColorInstance.TextButton_1
 				ColorInstance.ImageLabel_1.Image = 'http://www.roblox.com/asset/?id=6031625148'
 				ColorInstance.ImageLabel_1.BackgroundTransparency = 1
 				ColorInstance.ImageLabel_1.BorderSizePixel = 0
 				ColorInstance.ImageLabel_1.Position = UDim2.new(0.9151942729949951, 0, 0.20588237047195435, 0)
 				ColorInstance.ImageLabel_1.Size = UDim2.new(0, 19, 0, 19)
+
+				ColorInstance.Frame_2.Parent = ColorInstance.TextButton_1
 				ColorInstance.Frame_2.AnchorPoint = Vector2.new(0.5, 0.5)
 				ColorInstance.Frame_2.BackgroundColor3 = Color3.new(0, 0, 0)
 				ColorInstance.Frame_2.BackgroundTransparency = 1
@@ -2752,7 +2931,7 @@ function WindowTable:CreateWindow(config)
 				ColorInstance.Frame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
 				ColorInstance.Frame_2.Size = UDim2.new(1, 0, 1, 0)
 				ColorInstance.Frame_2.Name = 'Background'
-
+				Util:Ripple(ColorInstance.TextButton_1)
 
 				ColorInstance.UICorner_2.Parent = ColorInstance.Frame_2
 				ColorInstance.UICorner_2.CornerRadius = UDim.new(0, 4)
@@ -2764,8 +2943,9 @@ function WindowTable:CreateWindow(config)
 				ColorInstance.UIStroke_1.Transparency = 0.5
 				ColorInstance.UIStroke_1.Name = 'Border'
 
+				ColorInstance.LocalScript_1.Parent = ColorInstance.TextButton_1
 
-
+				ColorInstance.TextButton_2.Parent = ColorInstance.TextButton_1
 				ColorInstance.TextButton_2.Font = Enum.Font.SourceSans
 				ColorInstance.TextButton_2.Text = ''
 				ColorInstance.TextButton_2.TextColor3 = Color3.new(0, 0, 0)
@@ -3027,6 +3207,7 @@ function WindowTable:CreateWindow(config)
 
 				ColorInstance.LocalScript_3.Parent = ColorInstance.TextButton_2
 
+				ColorInstance.Frame_14.Parent = ColorInstance.TextButton_1
 				ColorInstance.Frame_14.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
 				ColorInstance.Frame_14.Position = UDim2.new(0, 0, 0.9411764740943909, 0)
 				ColorInstance.Frame_14.Size = UDim2.new(1, 0, 0.05882352963089943, 0)
@@ -3040,6 +3221,7 @@ function WindowTable:CreateWindow(config)
 
 				ColorInstance.UIPadding_1.Parent = ColorInstance.Frame_1
 
+				local Button = ColorInstance.TextButton_1
 
 				Button.MouseEnter:Connect(function()
 					Util:Tween(Button.Background,{BackgroundTransparency = 0.8},0.1)
